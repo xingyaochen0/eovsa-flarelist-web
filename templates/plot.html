@@ -1,0 +1,31 @@
+{% extends "base-fluid.html" %}
+{% block title %}EOVSA Plot{% endblock %}
+
+{% block head %}
+{% assets "example_css" %}
+<link rel="stylesheet" href="{{ ASSET_URL }}" />
+{% endassets %}
+{% assets "example_js" %}
+<script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %}
+{% endblock %}
+
+{% block container %}
+
+<!-- content goes into main container -->
+<!-- add your HTML code here -->
+<!-- Bootstrap 4 is supported -->
+
+<div class="container mt-3">
+    <h2>EOVSA Plot</h2>
+    
+    <!-- Plotly plot container -->
+    <div id="plot-container">
+        {{ plot_html|safe }}
+    </div>
+
+    <!-- Back button to return to the flare list -->
+    <a href="/flare-list" class="btn btn-secondary mt-3">Back to Flare List</a>
+</div>
+
+{% endblock %}
