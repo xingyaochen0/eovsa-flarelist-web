@@ -14,7 +14,8 @@ def get_eo_flare_list(start_utc, end_utc):
     """
     info from EOVSA_flare_list_from_wiki.csv
     """
-    file_path = '/data1/xychen/flaskenv/EOVSA_flare_list_from_wiki.csv'#/data1/xychen/flaskenv/EOVSA_flare_list_from_wiki.csv
+    #file_path = '/data1/xychen/flaskenv/EOVSA_flare_list_from_wiki.csv'#/data1/xychen/flaskenv/EOVSA_flare_list_from_wiki.csv
+    file_path = './EOVSA_flare_list_from_wiki.csv'
     df = pd.read_csv(file_path)
 
     flare_id = df['Flare_ID']
