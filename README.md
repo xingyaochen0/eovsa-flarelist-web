@@ -3,8 +3,16 @@
 Welcome to minisdc, a Flask project template designed to help you create interactive websites with ease.
 
 ## How to Run
+### Install Dependencies via conda
+```bash
+conda env create -f environment.yml
+```
+It will create a conda environment named "flarelist" with all the necessary dependencies. Then
+```bash
+conda activate flarelist
+```
 
-### Install Dependencies
+### Install Dependencies via pip (outdated)
 ```bash
 pip install -r requirements.txt
 ```
